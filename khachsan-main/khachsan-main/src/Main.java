@@ -2,8 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc_141 = new Scanner(System.in);
-        KhachSan khachSan_141 = new KhachSan();
+        Scanner sc_2138 = new Scanner(System.in);
+        KhachSan khachSan_2138 = new KhachSan();
 
         while (true) {
             System.out.println("\n===== MENU KHÁCH SẠN =====");
@@ -14,25 +14,25 @@ public class Main {
             System.out.println("5. Thoát");
             System.out.print("Chọn chức năng: ");
 
-            int chon_141 = sc_141.nextInt();
-            sc_141.nextLine();
+            int chon_2138 = sc_2138.nextInt();
+            sc_2138.nextLine();
 
-            switch (chon_141) {
-                case 1 -> khachSan_141.nhapKhachTro_141(sc_141);
-                case 2 -> khachSan_141.hienThiTatCa_141();
+            switch (chon_2138) {
+                case 1 -> khachSan_2138.nhapKhachTro_2138(sc_2138);
+                case 2 -> khachSan_2138.hienThiTatCa_2138();
                 case 3 -> {
                     System.out.print("Nhập CMND khách cần xóa: ");
-                    String cmndXoa_141 = sc_141.nextLine();
-                    khachSan_141.xoaKhachTro_141(cmndXoa_141);
+                    String cmndXoa_2138 = sc_2138.nextLine();
+                    khachSan_2138.xoaKhachTro_2138(cmndXoa_2138);
                 }
                 case 4 -> {
                     System.out.print("Nhập CMND khách cần tính tiền: ");
-                    String cmndTinh_141 = sc_141.nextLine();
-                    khachSan_141.tinhTienTheoCMND_141(cmndTinh_141);
+                    String cmndTinh_2138 = sc_2138.nextLine();
+                    khachSan_2138.tinhTienTheoCMND_2138(cmndTinh_2138);
                 }
                 case 5 -> {
                     System.out.println("Thoát chương trình.");
-                    sc_141.close();
+                    sc_2138.close();
                     return;
                 }
                 default -> System.out.println("❗ Lựa chọn không hợp lệ!");
